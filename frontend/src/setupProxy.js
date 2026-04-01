@@ -1,6 +1,6 @@
 const { createProxyMiddleware } = require('http-proxy-middleware');
 
-const API_PROXY_TARGET = process.env.API_PROXY_TARGET || 'http://localhost:5000';
+const API_PROXY_TARGET = process.env.API_PROXY_TARGET || 'http://32.195.66.128';
 
 module.exports = function setupProxy(app) {
   app.use(
